@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 10px; /* Adjust this value to control the gap between containers */
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  /* height: 80%; */
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  align-items: center;
+  background-color: white; /* Optional background color for the card */
+}
+.box-img {
+  max-width: 100%; /* Ensure images fit within their containers */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent any extra spacing below the image */
+  margin: 0 auto 10px; /* Add space below the image */
+  border-radius: 8px; /* Optional: add border radius to images */
+}
+.card p {
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.intro-paragraph {
+  text-align: center;
+  color: gray;
+}
+.button-container {
+  width: 100%; /* Ensure button spans the full width */
+  text-align: center; /* Center-align the button */
+}
+
+/* Style the button */
+.finish-button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: palevioletred;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.text {
+  font-weight: bold;
+  text-align: center;
+}
+h3 {
+  color: gray;
+}
+/* Hide the default radio button */
+input[type="radio"] {
+  display: none;
+}
+
+/* Style the custom radio button container */
+.radio-container {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 25px; /* Adjust as needed */
+}
+
+/* Style the custom radio button */
+.radio-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 16px; /* Adjust size as needed */
+  height: 16px; /* Adjust size as needed */
+  border-radius: 50%;
+  border: 2px solid gray;
+}
+
+.radio-container::after {
+  content: "\2713"; /* Unicode character for tick mark */
+  position: absolute;
+  top: 50%;
+  left: 2px; /* Adjust position as needed */
+  transform: translateY(-50%);
+  font-size: 14px; /* Adjust size as needed */
+  display: none;
+}
+
+/* Style the tick mark for the selected radio button */
+input[type="radio"]:checked + .radio-container::after {
+  color: pink; /* Change color to pink */
+  display: block;
+}

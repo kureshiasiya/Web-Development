@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dribbble</title>
+
+    <link rel="stylesheet" href="dribbble.css" />
+    <script>
+      function submit() {
+        window.location.href = "verify.html";
+      }
+    </script>
+  </head>
+  <body>
+    <img src="logo.png" alt="Your Image" class="-img" />
+    <h1>What brings you to dribbble?</h1>
+    <p class="intro-paragraph">
+      Select the option that best describe you. Don't worry, you can explore
+      other options later.
+    </p>
+    <div class="container">
+      <div class="card">
+        <img src="1.png" alt="Your Image" class="box-img" />
+
+        <p>I'm a designer looking to share my work</p>
+        <label class="radio-container" for="radio1">
+          <input type="radio" id="radio1" />
+        </label>
+      </div>
+
+      <div class="card">
+        <img src="2.png" alt="Your Image" class="box-img" />
+        <p>I'm looking to hire a designer</p>
+        <label class="radio-container" for="radio1">
+          <input type="radio" id="radio2" />
+        </label>
+      </div>
+      <div class="card">
+        <img src="3.png" alt="Your Image" class="box-img" />
+        <p>I'm looking for design inspiration</p>
+        <label class="radio-container" for="radio1">
+          <input type="radio" id="radio3" />
+        </label>
+      </div>
+    </div>
+    <p class="text">Anything else?You can select multiple</p>
+    <div class="button-container">
+      <button class="finish-button" onclick="submit()">Finish</button>
+      <h3>or press RETURN</h3>
+    </div>
+  </body>
+</html>

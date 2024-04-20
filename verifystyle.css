@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  align-items: center;
+  vertical-align: middle;
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  padding: 10px 20px;
+  color: gray;
+  text-decoration: none;
+}
+
+nav ul li img {
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #d87093;
+  color: black;
+}
+.black-logo-img {
+  margin-left: 5px;
+  /* margin-top: 10px; */
+  width: 80px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.header {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* align-content: center; */
+}
+.email-img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 600px;
+}
+.header-img {
+  width: 30px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  /* margin-left: 600px; */
+}
+p {
+  text-align: center;
+  color: gray;
+}
+.account {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+}
+h3 {
+  text-align: center;
+  color: gray;
+  margin-bottom: 5px;
+}
+.email {
+  text-align: center;
+  line-height: 1.5; /* Adjust as needed */
+  margin-bottom: 5px;
+}
+
+.highlight {
+  color: #d87093;
+}
+
+/* .resend {
+  font-weight: bold;
+} */
+.email-add {
+  text-align: center;
+  color: gray;
+}
+.right-nav {
+  float: right;
+  margin-left: 50px;
+}
+
+.right-nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.right-nav-container input[type="text"],
+.right-nav-container button {
+  margin: 0 5px;
+  border-radius: 5px;
+  border-color: gray;
+}
+
+.right-nav-container .header-img {
+  margin-right: 5px; /* Adjust margin between images and other elements */
+}
+
+/* .right-nav-container input[type="text"],
+.right-nav-container img,
+.right-nav-container button {
+  margin-right: 10px; /* Adjust margin between elements */
+
+/* .lock-img {
+  float: right;
+} */

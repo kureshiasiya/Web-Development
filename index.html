@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    
+    <title>Sign Up | Dribbble</title>
+   
+		<link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&amp;family=Mona+Sans:wght@500&amp;display=block"
+      rel="stylesheet"
+    />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<script>
+			function submit(){
+				window.location.href = "profile.html"; 
+			}
+		</script>
+
+  </head>
+
+  <body  >
+    <div id="main-container">
+      <section class="auth-sidebar">
+        <div class="auth-sidebar-content">
+          <img src="sideBanner.jpg" width="500px" height="600px"/>
+        </div>
+      </section>
+      <section class="content shift-down" data-content-container="">
+        <main>
+          
+
+          <div class="auth-content">
+            <h2>Sign up to Dribbble</h2>
+            <h3>.Username has already been taken</h3>
+
+            <div class="auth-form signup-form">
+              <form
+                class="main-form column-div"
+              >
+  
+								<div class="name-username row-div">
+									<div class="form-item column-div" style="margin-right: 15px;">
+										<label>Name</label>
+										<input value="John" />
+									</div>
+									<div class="form-item column-div">
+										
+										<label><i class="fa-solid fa-triangle-exclamation"></i>Username</label>
+
+										
+										<input value="John" class="error" />
+									</div>
+								</div>
+								<div class="form-item column-div">
+									<label>Email</label>
+										<input placeholder="Enter valid email" />
+								</div>
+								<div class="form-item column-div">
+									<label>Password</label>
+										<input placeholder="6+ characters" type="password" />
+								</div>
+							
+
+                <div class="form-field check-wrap opt-in">
+                  <fieldset>
+                    <input
+                      type="checkbox"
+                      id="user_agree_to_terms"
+                      name="user[agree_to_terms]"
+                    />
+                    <span class="terms-links" for="user_agree_to_terms">
+											Creating an account means that you agree to our
+											<a target="_blank" href="/terms">Terms of Service</a>,
+											<a target="_blank" href="/privacy">Privacy Policy</a>, and our
+											default
+											<a target="_blank" href="/notifications">Notification Settings</a>.
+									</span>
+                    </label>
+                  </fieldset>
+                </div>
+
+            
+
+							</form>
+							<div class="form-btns">
+								<input
+                    type="button"
+                    value="Create Account"
+                    data-disable-with="Create Account"
+                    onclick="submit()"
+                    class="create-account-btn"
+                />
+
+							</div>
+							<div>
+							<span class="terms-links" for="user_agree_to_terms">
+								This site is protected by reCaptcha and the google
+								
+								<a target="_blank" href="/privacy">Privacy Policy</a> and
+								default
+								<a target="_blank" href="/terms">Terms of Service</a> apply
+								
+						</span>
+               
+</div>
+
+              
+
+             
+            </div>
+
+         
+          </div>
+
+				</main>
+			</section>
+
+      
+  </body>
+</html> 

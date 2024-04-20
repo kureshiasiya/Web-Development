@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    
+    <title>Sign Up Page  | Dribbble</title>
+   
+		<link rel="stylesheet" href="profile.css" />
+    <script>
+			function submit(){
+				window.location.href = "dribbble.html"; 
+			}
+		</script>
+    
+  <body>
+    
+    
+              <main class="step-view-main">
+                <div class="step-view-main-container">
+                  <header class="step-view-header">
+                    <img src="logo.png" alt="Your Image" class="box-img" />
+                    <h1 class="header-title">
+                      Welcome! Let’s create your profile
+                    </h1>
+                    <p class="step-view-header-subtitle">
+                      Let others get to know you better!You can do these later
+                    </p>
+                  </header>
+                  <div style="margin-left: 300px;">
+                    <label> Add an avatar </label>
+                    <div class="avatar-upload-container">
+                      <div class="upload-img">   
+                        <img src="camera.png" width="50px"/>
+                      </div>
+                     
+                      <div class="avatar-upload-actions">
+                                              
+                        
+                          <div style="display: flex; flex-direction: column;">
+                            <button class="choose-img-button">
+                                  Choose image
+                              </button>
+                              <span class="avatar-select-trigger-text">
+                                Or choose one of our defaults
+                            </span>
+                          </div>
+                         
+                      </div>
+                    </div>
+
+                      <div style="margin-top: 60px;">
+                          <label for="location"> Add your location </label>
+                          <span class="error-marker">
+                              <input class="input-box" id="location" type="text" placeholder="Enter a location" class="has-label" />
+                          </span>
+                      </div>
+
+                      <div class="step-view-navigation">
+                          <button class="form-sub disabled" style="margin-top: 15px;"
+                          onclick="submit()">Next</button>
+                          
+                      </div>
+                      <span class="additionl text "style="color:gray">or press RETURN</span>
+                  </div>
+                      
+                        
+          
+        </div>
+        
+  </body>
+</html>
